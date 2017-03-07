@@ -1,0 +1,32 @@
+﻿body {
+}
+
+#mapaDePiso1 {  
+    width : 500px;      
+}
+
+#btnAula1 {
+    position: absolute;
+    left: 17px;
+    bottom:185px;
+    width: 140px;
+    height: 110px;
+}
+
+#btnAula2 {
+    position: absolute;
+    left: 162px;
+    bottom:185px;
+    width: 149px;
+    height: 110px;
+}
+#btnAula3 {
+    position: absolute;
+    left: 316px;
+    bottom:185px;
+    width: 166px;
+    height: 110px;
+}
+.PanelMapa{
+    position:relative;
+}

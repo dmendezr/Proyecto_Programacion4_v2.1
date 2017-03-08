@@ -1,7 +1,12 @@
+<%@ Page EnableEventValidation="false" %>
 <!DOCTYPE html>
 <script runat="server">
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Protected Sub Calendar1_SelectionChanged(sender As Object, e As EventArgs)
 
     End Sub
 </script>
@@ -318,7 +323,7 @@
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-3">
-                                    <i class="fa fa-comments fa-5x"></i>
+                                    <i class="fa fa-book fa-5x" aria-hidden="true"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">Piso 1</div>
@@ -339,7 +344,7 @@
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-3">
-                                    <i class="fa fa-tasks fa-5x"></i>
+                                    <i class="fa fa-book fa-5x" aria-hidden="true"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">Piso 2</div>
@@ -360,7 +365,7 @@
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-3">
-                                    <i class="fa fa-shopping-cart fa-5x"></i>
+                                    <i class="fa fa-book fa-5x" aria-hidden="true"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">Piso 3</div>
@@ -381,7 +386,7 @@
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-3">
-                                    <i class="fa fa-support fa-5x"></i>
+                                    <i class="fa fa-book fa-5x" aria-hidden="true"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">Piso 4</div>
@@ -426,11 +431,22 @@
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <div class="PanelMapa">
-                                <img class="img-responsive" id ="mapaDePiso1" src="../img/Piso.png" alt="Alternate Text" />
-                                <asp:Button ID="btnAula1" class="BotonesAulas" runat="server" OnClick="Button1_Click" Text="Button" />
-                                <asp:Button ID="btnAula2" class="BotonesAulas" runat="server" OnClick="Button1_Click" Text="Button" />
-                                <asp:Button ID="btnAula3" class="BotonesAulas" runat="server" OnClick="Button1_Click" Text="Button" />
+                            <div class ="col-md-8">
+                                <div class="PanelMapa">
+                                    <img class="img-responsive" id ="mapaDePiso1" src="../img/Piso.png" alt="Alternate Text" />
+                                    <asp:Button ID="btnAula1" class="BotonesAulas" runat="server" OnClick="Button1_Click" Text="Button" />
+                                    <asp:Button ID="btnAula2" class="BotonesAulas" runat="server" OnClick="Button1_Click" Text="Button" />
+                                    <asp:Button ID="btnAula3" class="BotonesAulas" runat="server" OnClick="Button1_Click" Text="Button" />
+                                    </div>
+                            </div>
+                            <div class=".col-md-4">
+                                <p class="text-info">Indique la fecha y el turno que desea solicitar el laboratorio</p>
+                                <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar>
+                                <br />
+                                <form class="form-inline" role="form">
+                                      <label for="ejemplo_email_2">Turno</label>
+                                      <asp:TextBox runat="server"></asp:TextBox>
+                                </form> 
                             </div>
                         </div>
                         <!-- /.panel-body -->

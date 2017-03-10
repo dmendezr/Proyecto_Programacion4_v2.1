@@ -88,6 +88,12 @@
     <Content Include="less\mixins.less" />
     <Content Include="less\sb-admin-2.less" />
     <Content Include="less\variables.less" />
+    <Content Include="pages\administracion.aspx" />
+    <Content Include="pages\llamadaScripts.aspx" />
+    <Content Include="pages\Navigationheader.aspx" />
+    <Content Include="pages\opcionesNavegacion.aspx" />
+    <Content Include="pages\solicitudesLaboratorio.aspx" />
+    <Content Include="pages\SolicitudPiso1.aspx" />
     <Content Include="styles\style1.css" />
     <Content Include="vendor\bootstrap-social\bootstrap-social.css" />
     <Content Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
@@ -161,7 +167,6 @@
     <Content Include="pages\forms.aspx" />
     <Content Include="pages\grid.aspx" />
     <Content Include="pages\icons.aspx" />
-    <Content Include="pages\index.aspx" />
     <Content Include="pages\login.aspx" />
     <Content Include="pages\morris.aspx" />
     <Content Include="pages\notifications.aspx" />
@@ -252,6 +257,48 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="pages\administracion.aspx.cs">
+      <DependentUpon>administracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\administracion.aspx.designer.cs">
+      <DependentUpon>administracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\llamadaScripts.aspx.cs">
+      <DependentUpon>llamadaScripts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\llamadaScripts.aspx.designer.cs">
+      <DependentUpon>llamadaScripts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Navigationheader.aspx.cs">
+      <DependentUpon>Navigationheader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Navigationheader.aspx.designer.cs">
+      <DependentUpon>Navigationheader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\opcionesNavegacion.aspx.cs">
+      <DependentUpon>opcionesNavegacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\opcionesNavegacion.aspx.designer.cs">
+      <DependentUpon>opcionesNavegacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\solicitudesLaboratorio.aspx.cs">
+      <DependentUpon>solicitudesLaboratorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\solicitudesLaboratorio.aspx.designer.cs">
+      <DependentUpon>solicitudesLaboratorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\SolicitudPiso1.aspx.cs">
+      <DependentUpon>SolicitudPiso1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\SolicitudPiso1.aspx.designer.cs">
+      <DependentUpon>SolicitudPiso1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

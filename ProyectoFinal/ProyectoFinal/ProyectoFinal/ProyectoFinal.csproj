@@ -94,6 +94,9 @@
     <Content Include="pages\opcionesNavegacion.aspx" />
     <Content Include="pages\solicitudesLaboratorio.aspx" />
     <Content Include="pages\SolicitudPiso1.aspx" />
+    <Content Include="pages\SolicitudPiso2.aspx" />
+    <Content Include="pages\SolicitudPiso3.aspx" />
+    <Content Include="pages\SolicitudPiso4.aspx" />
     <Content Include="styles\style1.css" />
     <Content Include="vendor\bootstrap-social\bootstrap-social.css" />
     <Content Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
@@ -298,6 +301,27 @@
     </Compile>
     <Compile Include="pages\SolicitudPiso1.aspx.designer.cs">
       <DependentUpon>SolicitudPiso1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\SolicitudPiso2.aspx.cs">
+      <DependentUpon>SolicitudPiso2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\SolicitudPiso2.aspx.designer.cs">
+      <DependentUpon>SolicitudPiso2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\SolicitudPiso3.aspx.cs">
+      <DependentUpon>SolicitudPiso3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\SolicitudPiso3.aspx.designer.cs">
+      <DependentUpon>SolicitudPiso3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\SolicitudPiso4.aspx.cs">
+      <DependentUpon>SolicitudPiso4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\SolicitudPiso4.aspx.designer.cs">
+      <DependentUpon>SolicitudPiso4.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

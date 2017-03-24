@@ -6,6 +6,11 @@
        
 }
 
+.img-responsive{
+    width: 100%;
+    height: 100%;
+}
+
 #btnAula1 {
     position: absolute;
     left: 17px;

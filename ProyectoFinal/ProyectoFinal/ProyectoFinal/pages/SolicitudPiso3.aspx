@@ -175,7 +175,7 @@
                         <div class="panel-body">
                             <div class ="col-md-8">
                                 <div class="PanelMapa">
-                                    <img class="img-responsive" id ="mapaDePiso1" src="../img/Piso.png" alt="Alternate Text" />
+                                    <img class="img-responsive" id ="mapaDePiso1" src="../img/Laboratorio3.png" alt="Alternate Text" />
                                     <asp:Button ID="btnAula1Piso3"  runat="server"  Text="Button" />
                                     <asp:Button ID="btnAula2Piso3"  runat="server"  Text="Button" />
                                     <asp:Button ID="btnAula3Piso3"  runat="server"  Text="Button" />

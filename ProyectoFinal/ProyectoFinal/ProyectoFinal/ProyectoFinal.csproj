@@ -76,6 +76,10 @@
     <Content Include="img\blackboard.svg" />
     <Content Include="img\chat.svg" />
     <Content Include="img\home.svg" />
+    <Content Include="img\Laboratorio1.png" />
+    <Content Include="img\Laboratorio2.png" />
+    <Content Include="img\Laboratorio3.png" />
+    <Content Include="img\Laboratorio4.png" />
     <Content Include="img\Piso.png" />
     <Content Include="img\Piso1.svg" />
     <Content Include="img\Piso2.svg" />

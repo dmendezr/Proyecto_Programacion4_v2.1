@@ -58,24 +58,6 @@ namespace ProyectoFinal.pages {
         protected global::System.Web.UI.WebControls.Button btnAula4Piso4;
         
         /// <summary>
-        /// Control btnAula5Piso4.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAula5Piso4;
-        
-        /// <summary>
-        /// Control btnAula6Piso4.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAula6Piso4;
-        
-        /// <summary>
         /// Control Calendar1.
         /// </summary>
         /// <remarks>

@@ -16,10 +16,10 @@ namespace ProyectoFinal.pages
 
         protected void Calendar1_SelectionChanged(object sender, EventArgs e)
         {
-            btnAula1.CssClass = "btn btn-danger";
-            btnAula1.Text = "Ocupado";
-            btnAula2.CssClass = "btn btn-success";
-            btnAula2.Text = "Dispoinble";
+            //btnAula1.CssClass = "btn btn-danger";
+            //btnAula1.Text = "Ocupado";
+            //btnAula2.CssClass = "btn btn-success";
+            //btnAula2.Text = "Dispoinble";
 
         }
 

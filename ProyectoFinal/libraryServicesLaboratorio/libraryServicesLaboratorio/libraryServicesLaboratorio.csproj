@@ -65,22 +65,41 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="conjuntoCaracteristicas.cs" />
+    <Compile Include="Curso.cs" />
+    <Compile Include="Laboratorio.cs" />
+    <Compile Include="Lab_Servidor.cs" />
+    <Compile Include="Lab_Software.cs" />
+    <Compile Include="Persona.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
     <Compile Include="IService1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servidor.cs" />
+    <Compile Include="Software.cs" />
+    <Compile Include="Solicitud.cs" />
+    <Compile Include="Turno.cs" />
+    <Compile Include="Usuario.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\profile1.pubxml" />
+    <None Include="Properties\PublishProfiles\ProyectoFinal.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaBD\CapaBD.csproj">
+      <Project>{cd6d4c27-349b-439d-b396-d4fa99fdc5cd}</Project>
+      <Name>CapaBD</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -164,6 +164,7 @@
                         <div class="panel-body">
                             <div class ="col-md-8">
                                 <div class="PanelMapa">
+<<<<<<< HEAD
                                     <img class="img-responsive" id ="mapaDePiso1" src="../img/Laboratorio1.png" alt="Alternate Text" />
                                     <asp:Button id="btnAula1"  runat="server"  Text="Button" />
                                     <asp:Button id="btnAula2"  runat="server"  Text="Button" />
@@ -172,8 +173,38 @@
                                     <asp:Button id="btnAula5"  runat="server"  Text="Button" />
                                     <asp:Button id="btnAula6"  runat="server" Text="Button" />
                                     <div class ="clear"></div>
+=======
+                                    <img class="img-responsive" id ="mapaDePiso1"  alt="Alternate Text" />
+                                    <!-- Trigger the modal with a button -->
+                                    <button type="button" name="btnAula1" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Reservar</button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog">
+    
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            
+                                            <h4 class="modal-title">Solicitar Laboratorio</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Some text in the modal.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default">Reservar</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                        </div>
+      
+                                    </div>
+                                    </div>
+                                <div class ="clear"></div>
+>>>>>>> origin/master
                                 </div>
                             </div>
+
                             <div class=".col-md-4">
                                 <p class="text-info">Indique la fecha y el turno que desea solicitar el laboratorio</p>
                                 <p class="auto-style1">

@@ -22,6 +22,7 @@ namespace ProyectoFinal.pages {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+<<<<<<< HEAD
         /// btnAula1 control.
         /// </summary>
         /// <remarks>
@@ -77,6 +78,9 @@ namespace ProyectoFinal.pages {
         
         /// <summary>
         /// Calendar1 control.
+=======
+        /// Control Calendar1.
+>>>>>>> origin/master
         /// </summary>
         /// <remarks>
         /// Auto-generated field.

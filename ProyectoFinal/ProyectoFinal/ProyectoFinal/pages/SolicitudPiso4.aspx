@@ -180,8 +180,8 @@
                                     <asp:Button ID="btnAula2Piso4"  runat="server"  Text="Button" />
                                     <asp:Button ID="btnAula3Piso4"  runat="server"  Text="Button" />
                                     <asp:Button ID="btnAula4Piso4"  runat="server"  Text="Button" />
-                                    <asp:Button ID="btnAula5Piso4" class="BotonesAulas" runat="server"  Text="Button" />
-                                    <asp:Button ID="btnAula6Piso4" class="BotonesAulas" runat="server" Text="Button" />
+                                    <%--<asp:Button ID="btnAula5Piso4" class="BotonesAulas" runat="server"  Text="Button" />
+                                    <asp:Button ID="btnAula6Piso4" class="BotonesAulas" runat="server" Text="Button" />--%>
                                     <div class ="clear"></div>
                                 </div>
                             </div>

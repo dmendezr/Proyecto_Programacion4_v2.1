@@ -58,6 +58,8 @@
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
+
+             <!-- PISO 1 - BOTON -->
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="panel panel-primary">
@@ -80,6 +82,9 @@
                         </a>
                     </div>
                 </div>
+                <!-- PISO 1 - BOTON END -->
+
+                <!-- PISO 2 - BOTON -->
                 <div class="col-lg-3 col-md-6">
                     <div class="panel panel-green">
                         <div class="panel-heading">
@@ -101,6 +106,9 @@
                         </a>
                     </div>
                 </div>
+                <!-- PISO 2 - BOTON END-->
+
+                <!-- PISO 3 - BOTON -->
                 <div class="col-lg-3 col-md-6">
                     <div class="panel panel-yellow">
                         <div class="panel-heading">
@@ -122,6 +130,9 @@
                         </a>
                     </div>
                 </div>
+                <!-- PISO 3 - BOTON END-->
+
+                <!-- PISO 4 - BOTON -->
                 <div class="col-lg-3 col-md-6">
                     <div class="panel panel-red">
                         <div class="panel-heading">
@@ -144,37 +155,30 @@
                     </div>
                 </div>
             </div>
+             <!-- PISO 4 - BOTON END -->
             <!-- /.row -->
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12" id="RR">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Mapa de Piso
-                            <div class="pull-right">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                        Actions
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu pull-right" role="menu">
-                                        <li><a href="#">Action</a>
-                                        </li>
-                                        <li><a href="#">Another action</a>
-                                        </li>
-                                        <li><a href="#">Something else here</a>
-                                        </li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class ="col-md-8">
                                 <div class="PanelMapa">
+<<<<<<< HEAD
                                     <img class="img-responsive" id ="mapaDePiso1"  src="../img/Laboratorio1.png" alt="Alternate Text" />
+=======
+<<<<<<< HEAD
+                                    <img class="img-responsive" id ="mapaDePiso1" src="../img/Laboratorio1.png" alt="Alternate Text" />
+                                    <asp:Button id="btnAula1"  runat="server"  Text="Button" />
+                                    <asp:Button id="btnAula2"  runat="server"  Text="Button" />
+                                    <asp:Button id="btnAula3"  runat="server"  Text="Button" />
+                                    <asp:Button id="btnAula4"  runat="server"  Text="Button" />
+                                    <asp:Button id="btnAula5"  runat="server"  Text="Button" />
+                                    <asp:Button id="btnAula6"  runat="server" Text="Button" />
+                                    <div class ="clear"></div>
+=======
+                                    <img class="img-responsive" id ="mapaDePiso1"  alt="Alternate Text" />
+>>>>>>> origin/master
                                     <!-- Trigger the modal with a button -->
                                     <button type="button" name="btnAula1" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Reservar</button>
 
@@ -201,6 +205,7 @@
                                     </div>
                                     </div>
                                 <div class ="clear"></div>
+>>>>>>> origin/master
                                 </div>
                             </div>
 

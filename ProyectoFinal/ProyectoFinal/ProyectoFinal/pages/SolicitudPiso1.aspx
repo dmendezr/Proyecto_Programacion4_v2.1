@@ -174,7 +174,7 @@
                         <div class="panel-body">
                             <div class ="col-md-8">
                                 <div class="PanelMapa">
-                                    <img class="img-responsive" id ="mapaDePiso1"  alt="Alternate Text" />
+                                    <img class="img-responsive" id ="mapaDePiso1"  src="../img/Laboratorio1.png" alt="Alternate Text" />
                                     <!-- Trigger the modal with a button -->
                                     <button type="button" name="btnAula1" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Reservar</button>
 

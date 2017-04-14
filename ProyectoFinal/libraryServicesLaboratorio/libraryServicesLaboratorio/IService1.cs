@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using CapaBD;
 
 namespace libraryServicesLaboratorio
 {
@@ -19,8 +20,22 @@ namespace libraryServicesLaboratorio
         [OperationContract]
         int ingresaSolicitud(string fechaSolicitud, int estadoSolicitud, int idTurno, int idUsuario, int idLaboratorio, string idCurso);
 
+        [OperationContract]
+        List<Turno> obtieneTurno();
+
+        [OperationContract]
+        List<Usuario> obtieneUsername();
+
+        [OperationContract]
+        List<Curso> obtieneCursos();
+
+        [OperationContract]
+        int ingresaCurso(string codCurso, string curso);
+
+        [OperationContract]
+        int modificaCurso(string codCurso, string curso);
     }
 
 
-    
+
 }

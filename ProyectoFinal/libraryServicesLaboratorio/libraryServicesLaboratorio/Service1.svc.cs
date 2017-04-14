@@ -17,36 +17,57 @@ namespace libraryServicesLaboratorio
     {
         public List<conjuntoCaracteristicas> obtieneCaracteristicas()
         {
-            conjuntoCaracteristicas objCaract;
-            List<conjuntoCaracteristicas> listCaract = new List<conjuntoCaracteristicas>();
-            SqlDataReader dr;
-            dr = CapaBD.metodosDatos.EjecutaProcedimientoSelect("sp_DevuelveCaracteristicas");
-            while (dr.Read())
+            return metodosDatos.EjecutarObtieneCaracteristicas();
+        }
+
+        public List<Turno> obtieneTurno () {
+                return metodosDatos.EjecutaObtieneTurnos();
+        }
+
+        public List<Usuario> obtieneUsername()
+        {
+
+            return metodosDatos.EjecutaObtieneUsuarios();   
+        }
+
+        public List <Curso> obtieneCursos()
+        {
+            return metodosDatos.EjecutaObtieneCursos();
+        }
+
+        public int ingresaCurso (string codCurso, string curso)
+        {
+            try
             {
-               objCaract = new conjuntoCaracteristicas();
-                objCaract.idConjunto = dr.GetInt32(0);
-                objCaract.cantidadMemoria = dr.GetString(1);
-                objCaract.cantidadHDD = dr.GetString(2);
-                objCaract.procesador = dr.GetString(3);
-                objCaract.velocidadProcesador = dr.GetString(4);
-                objCaract.pantalla = dr.GetString(5);
-                objCaract.SO = dr.GetString(6);
-                objCaract.paridadSO = dr.GetString(7);
-                objCaract.AC = dr.GetString(8);
-                objCaract.VideoBeam = dr.GetString(9);
-                listCaract.Add(objCaract);
+                return CapaBD.metodosDatos.EjecutaInsertCurso(codCurso, curso);
             }
-            CapaBD.metodosDatos.cierraConexion();
-            return listCaract;
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public int modificaCurso (string codCurso, string curso)
+        {
+            return CapaBD.metodosDatos.EjecutaUpdateCurso(codCurso, curso);
         }
 
         public int ingresaSolicitud (string fechaSolicitud, int estadoSolicitud, int idTurno, int idUsuario, int idLaboratorio,string idCurso)
         {
-            estadoSolicitud = Convert.ToInt32(estadoSolicitud);
-            idTurno = Convert.ToInt32(idTurno);
-            idUsuario = Convert.ToInt32(idUsuario);
-            idLaboratorio = Convert.ToInt32(idLaboratorio);
-            return CapaBD.metodosDatos.InsertSolicitud(fechaSolicitud, estadoSolicitud, idTurno, idUsuario, idLaboratorio, idCurso);    
+            try
+            {
+                estadoSolicitud = Convert.ToInt32(estadoSolicitud);
+                idTurno = Convert.ToInt32(idTurno);
+                idUsuario = Convert.ToInt32(idUsuario);
+                idLaboratorio = Convert.ToInt32(idLaboratorio);
+                return CapaBD.metodosDatos.InsertSolicitud(fechaSolicitud, estadoSolicitud, idTurno, idUsuario, idLaboratorio, idCurso);
+            }
+            finally
+            {
+
+            }
+           
         }
     }
 }

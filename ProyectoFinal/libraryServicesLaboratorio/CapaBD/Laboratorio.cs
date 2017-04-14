@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace libraryServicesLaboratorio
+namespace CapaBD
 {
     public class Laboratorio
     {
@@ -11,5 +11,6 @@ namespace libraryServicesLaboratorio
         public int cantequipos { get; set; }
         public int piso { get; set; }
         public int conjutoCaract { get; set; }
+        public string descripcion { get; set; }
     }
 }

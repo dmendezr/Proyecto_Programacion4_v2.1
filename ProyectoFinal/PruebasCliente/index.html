@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<style>
+	th{
+		border: 1px solid blue;
+		
+		padding: 0px 0px 0px 0px;
+	}
+	</style>
+</head>
+<body>
+ 
+<select name="turno" id="cmbTurno"> 
+
+</select>
+
+<input type="button" id="Btn1" value="ConsultarTurno"></input>
+
+ <table >
+  	<thead>
+  		<tr>
+  			<th>id</th>
+  			<th>Turno</th>
+  		</tr>
+  	</thead>
+  	<tbody id="cuerpoTabla"></tbody>
+  </table>
+
+
+<script>
+	
+function ObtenerTurno(){
+	$.ajax({
+		url:"http://localhost/ProyectoLaboratorios/Service1.svc/obtieneTurno",
+		type:"POST",
+		dataType: "JSON",
+		success:function(data){
+			var arreglo = [];
+			arreglo = data;
+			arreglo.map(function (item){
+			  $("#cmbTurno").append('<option value="'+item.idTurno+'">'+item.turno+'</option>');
+			})
+		},
+		error:function(e){
+			alert(e.responseText);
+		}
+	})
+}
+
+function  LlenaTabla(){
+	$.ajax({
+		url:"http://localhost/ProyectoLaboratorios/Service1.svc/obtieneTurno",
+		type:"POST",
+		dataType: "JSON",
+		success:function(data){
+			var arreglo = [];
+			arreglo = data;
+			arreglo.map(function (item){
+			  $("#cuerpoTabla").append("<tr><th>"+item.id+"</th><th>"+item.turno+"</th><tr>");
+			})
+		},
+		error:function(e){
+			alert(e.responseText);
+		}
+	})
+}
+
+
+	$(document).ready(function (){
+		$("#Btn1").click(function (){
+			LlenaTabla();
+		});
+		/*
+		$("#Btn2").click(function (){
+			ObtenerSaludoEstudiante2();
+		})
+		$("#Btn3").click(function (){
+			ConsultarEstudiantes();
+		})
+		$("#Btn4").click(function (){
+			ObtenerObjetoEstudiante();
+		})
+		*/
+	})
+</script>
+</body>
+</html>

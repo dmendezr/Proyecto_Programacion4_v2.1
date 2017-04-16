@@ -52,6 +52,7 @@
     <Compile Include="Servidor.cs" />
     <Compile Include="Software.cs" />
     <Compile Include="Solicitud.cs" />
+    <Compile Include="Tipo_Usuario.cs" />
     <Compile Include="Turno.cs" />
     <Compile Include="Usuario.cs" />
   </ItemGroup>

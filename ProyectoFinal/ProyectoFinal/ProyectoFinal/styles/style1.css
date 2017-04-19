@@ -1,6 +1,5 @@
 ﻿body {
-<<<<<<< HEAD
-    height: 1000px;
+    height: 600px;
 }
 
 #page-wrapper{
@@ -10,19 +9,16 @@
 #mapaDePiso1 {  
     width : 700px; 
     height: 500px;
-=======
 }
 
 #mapaDePiso1 {  
     width : 500px; 
        
->>>>>>> origin/master
 }
 
 .img-responsive{
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
 }
 
 #btnAula1 {
@@ -33,9 +29,6 @@
     height: 110px;
 }
 
-#btnAula2 {
-=======
-}e
 #mapaDePiso1{
     position: relative;
     background-image: url("../img/Laboratorio1.png");
@@ -46,15 +39,14 @@
     
 }
 
-/*#btnAula2 {
->>>>>>> origin/master
+#btnAula2 {
     position: absolute;
     left: 162px;
     bottom:185px;
     width: 149px;
     height: 110px;
-<<<<<<< HEAD
 }
+
 #btnAula3 {
     position: absolute;
     left: 316px;
@@ -79,26 +71,20 @@
 }
 
 #btnAula6 {
-    position: absolute;
-    left: 310px;
-    bottom:25px;
-    width: 50px;
+    position:relative;
+    width: 500px;
     height: 50px;
 }
 .PanelMapa {
-    position: relative;
+    
 }
 
 .PanelMapa img{
     height: 100px;
-    width: 250px;
+    width: 500px;
 }
-=======
-}*/
 
-.PanelMapa {
-    position: relative;
-    top: -3px;
-    left: 3px;
+.panel-default{
+    height: 500px;
 }
->>>>>>> origin/master
+

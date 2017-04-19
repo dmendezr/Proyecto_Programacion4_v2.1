@@ -164,7 +164,6 @@
                         <div class="panel-body">
                             <div class ="col-md-8">
                                 <div class="PanelMapa">
-<<<<<<< HEAD
                                     <img class="img-responsive" id ="mapaDePiso1" src="../img/Laboratorio1.png" alt="Alternate Text" />
                                     <asp:Button id="btnAula1"  runat="server"  Text="Button" />
                                     <asp:Button id="btnAula2"  runat="server"  Text="Button" />
@@ -173,8 +172,6 @@
                                     <asp:Button id="btnAula5"  runat="server"  Text="Button" />
                                     <asp:Button id="btnAula6"  runat="server" Text="Button" />
                                     <div class ="clear"></div>
-=======
-                                    <img class="img-responsive" id ="mapaDePiso1"  alt="Alternate Text" />
                                     <!-- Trigger the modal with a button -->
                                     <button type="button" name="btnAula1" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Reservar</button>
 
@@ -201,7 +198,6 @@
                                     </div>
                                     </div>
                                 <div class ="clear"></div>
->>>>>>> origin/master
                                 </div>
                             </div>
 

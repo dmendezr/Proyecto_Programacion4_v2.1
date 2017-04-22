@@ -115,6 +115,12 @@ namespace libraryServicesLaboratorio
 
         [OperationContract]
         List<Solicitud> obtieneSolicitud();
+
+        [OperationContract]
+        List<Solicitud> EjecutaObtieneConsultas(String fecha_solicitud, int estado_solicitud, int id_Usuario, string fecha_final);
+
+        [OperationContract]
+        int EjecutaActualizaEstado(int id_Solicitud, string fecha_solicitud, int idTurno, int id_laboratorio);
     }
 
 

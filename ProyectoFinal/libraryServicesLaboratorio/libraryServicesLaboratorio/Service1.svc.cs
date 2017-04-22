@@ -317,8 +317,15 @@ namespace libraryServicesLaboratorio
             return metodosDatos.EjecutaObtieneSolicitud();
         }
 
+        public List<Solicitud> EjecutaObtieneConsultas(String fecha_solicitud, int estado_solicitud, int id_Usuario, string fecha_final)
+        {
+            return metodosDatos.EjecutaObtieneConsultas(fecha_solicitud,estado_solicitud,id_Usuario,fecha_final);
+        }
 
-
+        public int EjecutaActualizaEstado(int id_Solicitud, string fecha_solicitud, int idTurno, int id_laboratorio)
+        {
+            return CapaBD.metodosDatos.EjecutaActualizaEstado(id_Solicitud, fecha_solicitud, idTurno, id_laboratorio);
+        }
 
 
 

@@ -30,6 +30,29 @@ namespace CapaBD
             catch { throw; }
         }
 
+        public static SqlDataReader EjecutaProcedimientoSelectConsulta(string nombreProc, SqlConnection _conexion, String fecha_solicitud, int estado_solicitud, int id_Usuario, string fecha_final)
+        {
+            try
+            {
+                SqlDataReader dr;
+                string _cadenaConexion = Conexion.CadenaConexion;
+
+                _conexion.ConnectionString = _cadenaConexion;
+                SqlCommand comando = new SqlCommand(nombreProc, _conexion);
+                comando.Parameters.Add("@fechaInicio", SqlDbType.NVarChar).Value = fecha_solicitud;
+                comando.Parameters.Add("@estado", SqlDbType.Int).Value = estado_solicitud;
+                comando.Parameters.Add("@usuario", SqlDbType.Int).Value = id_Usuario;
+                comando.Parameters.Add("@fechaFinal", SqlDbType.NVarChar).Value = fecha_final;
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.CommandTimeout = 0;
+                _conexion.Open();
+                comando.ExecuteNonQuery();
+                dr = comando.ExecuteReader();
+                return dr;
+            }
+            catch { throw; }
+        }
+
         public static List<Turno> EjecutaObtieneTurnos()
         {
             try
@@ -179,8 +202,7 @@ namespace CapaBD
                 
             }
         }
-
-
+                
         public static int EjecutaInsertTurno(int turno)
         {
             string _cadenaConexion = Conexion.CadenaConexion;
@@ -679,11 +701,51 @@ namespace CapaBD
         }
 
 
+        public static List<Solicitud> EjecutaObtieneConsultas(String fecha_solicitud,int estado_solicitud,int id_Usuario, string fecha_final)
+        {
+            try
+            {
+                SqlConnection _conexion = new SqlConnection();
+                List<Solicitud> listConsultas = new List<Solicitud>();
+                SqlDataReader dr;
+                dr = EjecutaProcedimientoSelectConsulta("sp_ObtenerConsultas", _conexion, fecha_solicitud, estado_solicitud,id_Usuario,fecha_final);
+             
+                while (dr.Read())
+                {
+                    Solicitud objSolicitud = new Solicitud();
+                    objSolicitud.id_solicitud = (dr.GetInt32(0));
+                    objSolicitud.fecha_solicitud = (Convert.ToString(dr.GetDateTime(1).ToShortDateString()));
+                    objSolicitud.estado_solicitud = (dr.GetInt32(2));
+                    objSolicitud.idTurno = (dr.GetInt32(3));
+                    objSolicitud.id_Usuario = (dr.GetInt32(4));
+                    objSolicitud.id_laboratorio = (dr.GetInt32(5));
+                    objSolicitud.codCurso = (dr.GetString(6));
+                    listConsultas.Add(objSolicitud);
+                }
+                _conexion.Dispose();
+                _conexion.Close();
+                return listConsultas;
+            }
+            catch { throw; }
+        }
 
+        public static int EjecutaActualizaEstado(int id_Solicitud, string fecha_solicitud,int idTurno,int id_laboratorio)
+        {
+            string _cadenaConexion = Conexion.CadenaConexion;
+            SqlConnection _conexion = new SqlConnection();
+            _conexion.ConnectionString = _cadenaConexion;
+            SqlCommand comando = new SqlCommand("sp_ActualizaEstado", _conexion);
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.Add("@idSolicitud", SqlDbType.Int).Value = id_Solicitud;
+            comando.Parameters.Add("@fechaSolicitud", SqlDbType.NVarChar).Value = fecha_solicitud;
+            comando.Parameters.Add("@turno", SqlDbType.Int).Value = idTurno;
+            comando.Parameters.Add("@idLaboratorio", SqlDbType.Int).Value = id_laboratorio;
+            comando.CommandTimeout = 0;
+            _conexion.Open();
+            return comando.ExecuteNonQuery();
+        }
 
-
-
-
-
+      
+      
     }//fin public class Metodos
-    }
+}
